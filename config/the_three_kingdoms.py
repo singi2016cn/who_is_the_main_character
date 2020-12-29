@@ -1,3 +1,13 @@
+# 标题
+title = '三国演义'
+
+# 章节过滤文本
+chapterFilterWords = '正文'
+
+# 章节描述
+chapterName = '章节'
+
+# 角色配置
 roles = [
     {
         'name': '刘备',
