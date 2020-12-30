@@ -8,9 +8,9 @@ import pandas as pd
 def countWords(inputFile, config, isOutCsv = False, outputFile = ''):
     with open(inputFile, 'r', encoding='utf-8') as f:
         title = config.title
-        roles = config.roles
         chapterFilterWords = config.chapterFilterWords
         chapterName = config.chapterName
+        roles = config.roles
 
         chapterNumber = 0
         chapterArr = []
@@ -29,11 +29,15 @@ def countWords(inputFile, config, isOutCsv = False, outputFile = ''):
                 chapter = tools.getChapter(chapterNumber - 1)
                 chapterArr.append(chapter)
                 for role in roles:
-                    role['chapters'].append(role['totalCount'])
+                    role['chapterCount'].append(role['totalCount'])
                 if line == '':
                     break
 
             for role in roles:
+                if role.__contains__('chapterCount') == False:
+                        role.setdefault('chapterCount', [])
+                if role.__contains__('totalCount') == False:
+                    role.setdefault('totalCount', 0)
                 count = tools.countWithArr(line, role['filterWords'])
                 role['totalCount'] += count
             
@@ -42,11 +46,12 @@ def countWords(inputFile, config, isOutCsv = False, outputFile = ''):
 
         pdcsv[chapterName] = chapterArr
         for role in roles:
-            print('%s总出场次数：%s' % (role['name'], role['totalCount']))
-            pdcsv[role['name']] = role['chapters']
+            name = role['filterWords'][0]
+            print('%s总出场次数：%s' % (name, role['totalCount']))
+            pdcsv[name] = role['chapterCount']
             if mainCharacterCount < role['totalCount']:
                 mainCharacterCount = role['totalCount']
-                mainCharacter = role['name']
+                mainCharacter = name
         
         print('主角是%s!!!' % mainCharacter)
 
