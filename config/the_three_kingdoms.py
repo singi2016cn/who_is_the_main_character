@@ -103,13 +103,13 @@ roles = [
         'filterWords': ['袁绍'],
     },
     {
-        'filterWords': ['田丰'],
+        'filterWords': ['田丰', '元皓'],
     },
     {
         'filterWords': ['许攸'],
     },
     {
-        'filterWords': ['沮授'],
+        'filterWords': ['沮授', '公与'],
     },
     {
         'filterWords': ['颜良'],
@@ -233,5 +233,119 @@ roles = [
     },
     {
         'filterWords': ['吕蒙', '子明']
+    },
+    {
+        'filterWords': ['诸葛瑾', '子瑜']
+    },
+    {
+        'filterWords': ['朱儁', '公伟']
+    },
+    {
+        'filterWords': ['司马懿', '仲达']
+    },
+    {
+        'filterWords': ['蒋琬', '公琬']
+    },
+    {
+        'filterWords': ['蒋钦']
+    },
+    {
+        'filterWords': ['蒋干']
+    },
+    {
+        'filterWords': ['丁原', '建阳']
+    },
+    {
+        'filterWords': ['黄琬', '子琰']
+    },
+    {
+        'filterWords': ['袁术', '公路']
+    },
+    {
+        'filterWords': ['何进', '遂高']
+    },
+    {
+        'filterWords': ['荀攸', '公达']
+    },
+    {
+        'filterWords': ['荀彧', '文若']
+    },
+    {
+        'filterWords': ['程普', '德谋']
+    },
+    {
+        'filterWords': ['公孙瓒', '伯珪']
+    },
+    {
+        'filterWords': ['庞德', '令明']
+    },
+    {
+        'filterWords': ['徐晃', '公明']
+    },
+    {
+        'filterWords': ['蔡邕', '伯喈']
+    },
+    {
+        'filterWords': ['蔡瑁', '德珪']
+    },
+    {
+        'filterWords': ['陆康', '季宁']
+    },
+    {
+        'filterWords': ['崔琰', '季珪']
+    },
+    {
+        'filterWords': ['文鸯', '次骞']
+    },
+    {
+        'filterWords': ['樊稠']
+    },
+    {
+        'filterWords': ['辛评', '仲治']
+    },
+    {
+        'filterWords': ['陶谦', '恭祖']
+    },
+    {
+        'filterWords': ['于禁', '文则']
+    },
+    {
+        'filterWords': ['孔融', '文举']
+    },
+    {
+        'filterWords': ['皇甫嵩', '义真']
+    },
+    {
+        'filterWords': ['向宠']
+    },
+    {
+        'filterWords': ['乐进', '文谦']
+    },
+    {
+        'filterWords': ['鲁肃', '子敬']
+    },
+    {
+        'filterWords': ['廖化', '元俭']
+    },
+    {
+        'filterWords': ['卢植', '子干']
+    },
+    {
+        'filterWords': ['太史慈', '子义']
+    },
+    {
+        'filterWords': ['甘宁']
+    },
+    {
+        'filterWords': ['糜竺', '子仲']
+    },
+    {
+        'filterWords': ['麹义']
+    },
+    {
+        'filterWords': ['满宠', '伯宁']
+    },
+    {
+        'filterWords': ['孟获']
     },
 ]
