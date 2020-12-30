@@ -10,7 +10,7 @@ chapterName = '章节'
 # 角色配置
 roles = [
     {
-        'filterWords': ['刘备', '刘玄德', '玄德', '刘使君', '刘豫州', '刘皇叔'], # 第一个作为角色名称显示
+        'filterWords': ['刘备', '刘玄德', '玄德', '刘使君', '刘豫州', '刘皇叔'],  # 第一个作为角色名称显示
     },
     {
         'filterWords': ['关羽', '云长', '关云长', '关公', '汉寿亭侯', '关某'],
@@ -127,9 +127,111 @@ roles = [
         'filterWords': ['马岱'],
     },
     {
-        'filterWords': ['韩遂'],
+        'filterWords': ['韩遂', '文约'],
     },
     {
         'filterWords': ['张郃', '儁乂'],
+    },
+    {
+        'filterWords': ['张鲁', '公祺']
+    },
+    {
+        'filterWords': ['张松', '子乔', '永年']
+    },
+    {
+        'filterWords': ['张苞']
+    },
+    {
+        'filterWords': ['张嶷', '伯岐']
+    },
+    {
+        'filterWords': ['刘焉', '君郎']
+    },
+    {
+        'filterWords': ['刘虞', '伯安']
+    },
+    {
+        'filterWords': ['刘表', '景升']
+    },
+    {
+        'filterWords': ['刘晔', '子阳']
+    },
+    {
+        'filterWords': ['刘璋', '季玉']
+    },
+    {
+        'filterWords': ['刘禅', '公嗣']
+    },
+    {
+        'filterWords': ['刘琦']
+    },
+    {
+        'filterWords': ['刘封']
+    },
+    {
+        'filterWords': ['曹嵩', '巨高']
+    },
+    {
+        'filterWords': ['曹仁', '子孝']
+    },
+    {
+        'filterWords': ['曹洪', '子廉']
+    },
+    {
+        'filterWords': ['曹昂', '子修']
+    },
+    {
+        'filterWords': ['曹丕', '子桓']
+    },
+    {
+        'filterWords': ['曹植', '子建']
+    },
+    {
+        'filterWords': ['曹休', '文烈']
+    },
+    {
+        'filterWords': ['曹真', '子丹']
+    },
+    {
+        'filterWords': ['李傕', '稚然']
+    },
+    {
+        'filterWords': ['郭汜']
+    },
+    {
+        'filterWords': ['李儒', '文优']
+    },
+    {
+        'filterWords': ['李典', '曼成']
+    },
+    {
+        'filterWords': ['杨修', '德祖']
+    },
+    {
+        'filterWords': ['杨仪', '威公']
+    },
+    {
+        'filterWords': ['陈宫', '公台']
+    },
+    {
+        'filterWords': ['陈登', '元龙']
+    },
+    {
+        'filterWords': ['韩当', '义公']
+    },
+    {
+        'filterWords': ['韩馥', '文节']
+    },
+    {
+        'filterWords': ['韩德']
+    },
+    {
+        'filterWords': ['夏侯惇', '元让']
+    },
+    {
+        'filterWords': ['夏侯渊', '妙才']
+    },
+    {
+        'filterWords': ['吕蒙', '子明']
     },
 ]
