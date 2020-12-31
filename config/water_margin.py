@@ -11,7 +11,7 @@ chapterName = '章节'
 roles = [
     {
         'filterWords': [
-            '宋江', '及时雨', '公明'
+            '宋江'
         ]
     },
     {
@@ -21,7 +21,7 @@ roles = [
     },
     {
         'filterWords': [
-            '吴用', '智多星'
+            '吴用'
         ]
     },
     {
