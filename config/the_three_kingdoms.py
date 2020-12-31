@@ -2,7 +2,7 @@
 title = '三国演义'
 
 # 章节过滤文本
-chapterFilterWords = '正文'
+chapterFilterPattern = '正文'
 
 # 章节描述
 chapterName = '章节'

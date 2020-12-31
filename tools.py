@@ -1,5 +1,6 @@
 import tools
 import pandas as pd
+import re
 
 
 '''
@@ -8,7 +9,7 @@ import pandas as pd
 def countWords(inputFile, config, isOutCsv = False, outputFile = ''):
     with open(inputFile, 'r', encoding='utf-8') as f:
         title = config.title
-        chapterFilterWords = config.chapterFilterWords
+        chapterFilterPattern = config.chapterFilterPattern
         chapterName = config.chapterName
         roles = config.roles
 
@@ -22,7 +23,7 @@ def countWords(inputFile, config, isOutCsv = False, outputFile = ''):
         while(True):
             line = f.readline()
 
-            if (line.find(chapterFilterWords) > -1 or line == ''):
+            if (re.match(chapterFilterPattern, line) != None or line == ''):
                 chapterNumber += 1
                 if chapterNumber == 1:
                     continue

@@ -1,2 +1,5 @@
 __pycache__/
 /.idea/
+*.log
+t.py
+/craw_data/
