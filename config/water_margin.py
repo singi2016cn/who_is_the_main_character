@@ -2,571 +2,571 @@
 title = '水浒传'
 
 # 章节分隔正则匹配表达式
-chapterFilterPattern = '第\w+回'
+chapter_filter_pattern = '第\w+回'
 
 # 章节描述
-chapterName = '章节'
+chapter_name = '章节'
 
 # 角色配置
 roles = [
     {
-        'filterWords': [
+        'filter_words': [
             '宋江', '及时雨', '公明'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '卢俊义', '卢员外'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '吴用', '智多星'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '公孙胜'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '关胜'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '林冲', '豹子头', '林教头'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '秦明'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '呼延灼'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '花荣'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '柴进'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '李应'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '朱仝'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '鲁智深', '花和尚', '鲁提辖'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '武松'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '董平'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '张清'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '杨志'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '徐宁'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '索超'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '戴宗'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '刘唐'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '李逵'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '史进'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '穆弘'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '雷横'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '李俊'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '阮小二'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '张横'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '阮小五'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '张顺'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '阮小七'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '杨雄'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '石秀'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '解珍'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '解宝'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '燕青'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '朱武'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '黄信'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '孙立'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '宣赞'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '郝思文'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '韩滔'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '彭玘'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '单廷珪'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '魏定国'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '萧让'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '裴宣'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '欧鹏'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '邓飞'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '燕顺'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '杨林'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '凌振'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '蒋敬'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '吕方'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '郭盛'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '安道全'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '皇甫端'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '王英'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '扈三娘'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '鲍旭'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '樊瑞'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '孔明'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '孔亮'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '项充'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '李衮'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '金大坚'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '马麟'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '童威'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '童猛'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '孟康'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '侯健'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '陈达'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '杨春'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '郑天寿'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '陶宗旺'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '宋清'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '乐和'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '龚旺'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '丁得孙'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '穆春'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '曹正'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '宋万'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '杜迁'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '薛永'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '施恩'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '李忠'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '周通'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '汤隆'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '杜兴'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '邹渊'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '邹润'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '朱贵'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '朱富'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '蔡福'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '蔡庆'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '李立'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '李云'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '焦挺'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '石勇'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '孙新'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '顾大嫂'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '张青'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '孙二娘'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '王定六'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '郁保四'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '白胜'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '时迁'
         ]
     },
     {
-        'filterWords': [
+        'filter_words': [
             '段景住'
         ]
     },
-    {'filterWords': ['晁盖', '托塔天王']},
-    {'filterWords': ['高俅', '高太尉']},
-    {'filterWords': ['蔡京']},
-    {'filterWords': ['童贯']},
-    {'filterWords': ['杨戬']},
-    {'filterWords': ['宿元景']},
-    {'filterWords': ['王进']},
-    {'filterWords': ['刘光世']},
-    {'filterWords': ['陆谦']},
-    {'filterWords': ['西门庆']},
-    {'filterWords': ['王婆']},
-    {'filterWords': ['蒋忠']},
-    {'filterWords': ['方腊']},
-    {'filterWords': ['庞万春']},
-    {'filterWords': ['李师师']},
-    {'filterWords': ['武大郎']},
-    {'filterWords': ['潘金莲']},
-    {'filterWords': ['潘巧云']},
-    {'filterWords': ['王伦']},
-    {'filterWords': ['徽宗', '道君']},
+    {'filter_words': ['晁盖', '托塔天王']},
+    {'filter_words': ['高俅', '高太尉']},
+    {'filter_words': ['蔡京']},
+    {'filter_words': ['童贯']},
+    {'filter_words': ['杨戬']},
+    {'filter_words': ['宿元景']},
+    {'filter_words': ['王进']},
+    {'filter_words': ['刘光世']},
+    {'filter_words': ['陆谦']},
+    {'filter_words': ['西门庆']},
+    {'filter_words': ['王婆']},
+    {'filter_words': ['蒋忠']},
+    {'filter_words': ['方腊']},
+    {'filter_words': ['庞万春']},
+    {'filter_words': ['李师师']},
+    {'filter_words': ['武大郎']},
+    {'filter_words': ['潘金莲']},
+    {'filter_words': ['潘巧云']},
+    {'filter_words': ['王伦']},
+    {'filter_words': ['徽宗', '道君']},
 ]

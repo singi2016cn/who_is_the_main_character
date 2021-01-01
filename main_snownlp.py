@@ -5,7 +5,7 @@
 from snownlp import SnowNLP
 import jieba_filter.water_margin
 
-filterWords = jieba_filter.water_margin.filterWords
+filter_words = jieba_filter.water_margin.filter_words
 roles = {}
 
 with open('data/water_margin.txt', encoding='utf-8') as f:
@@ -17,7 +17,7 @@ with open('data/water_margin.txt', encoding='utf-8') as f:
         if len(word) <= 1:
             continue
         roles[word] = roles.get(word, 0) + 1
-        if word in filterWords:
+        if word in filter_words:
             del(roles[word])
 
     items = list(roles.items())

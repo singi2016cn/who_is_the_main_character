@@ -1,79 +1,83 @@
-import tools
 import pandas as pd
 import re
-
 
 '''
 主程序，根据配置匹配特定单词出现次数
 '''
-def countWords(inputFile, config, isOutCsv = False, outputFile = ''):
-    with open(inputFile, 'r', encoding='utf-8') as f:
+
+
+def count_words(input_file, config, is_out_csv=False, output_file=''):
+    with open(input_file, 'r', encoding='utf-8') as f:
         title = config.title
-        chapterFilterPattern = config.chapterFilterPattern
-        chapterName = config.chapterName
+        chapter_filter_pattern = config.chapter_filter_pattern
+        chapter_name = config.chapter_name
         roles = config.roles
 
-        chapterNumber = 0
-        chapterArr = []
+        chapter_number = 0
+        chapter_arr = []
         pdcsv = {}
 
-        mainCharacterCount = 0
-        mainCharacter = ''
+        main_character_count = 0
+        main_character = ''
 
-        while(True):
+        while True:
             line = f.readline()
 
-            if (re.match(chapterFilterPattern, line) != None or line == ''):
-                chapterNumber += 1
-                if chapterNumber == 1:
+            if re.search(chapter_filter_pattern, line) is not None or line == '':
+                chapter_number += 1
+                if chapter_number == 1:
                     continue
-                chapter = tools.getChapter(chapterNumber - 1)
-                chapterArr.append(chapter)
+                chapter = get_chapter(chapter_number - 1)
+                chapter_arr.append(chapter)
                 for role in roles:
                     role['chapterCount'].append(role['totalCount'])
                 if line == '':
                     break
 
             for role in roles:
-                if role.__contains__('chapterCount') == False:
-                        role.setdefault('chapterCount', [])
-                if role.__contains__('totalCount') == False:
+                if not role.__contains__('chapterCount'):
+                    role.setdefault('chapterCount', [])
+                if not role.__contains__('totalCount'):
                     role.setdefault('totalCount', 0)
-                count = tools.countWithArr(line, role['filterWords'])
+                count = count_with_arr(line, role['filter_words'])
                 role['totalCount'] += count
-            
-        
+
         print('%s谁才是主角？' % title)
 
-        pdcsv[chapterName] = chapterArr
+        pdcsv[chapter_name] = chapter_arr
         for role in roles:
-            name = role['filterWords'][0]
+            name = role['filter_words'][0]
             print('%s总出场次数：%s' % (name, role['totalCount']))
             pdcsv[name] = role['chapterCount']
-            if mainCharacterCount < role['totalCount']:
-                mainCharacterCount = role['totalCount']
-                mainCharacter = name
-        
-        print('主角是%s!!!' % mainCharacter)
+            if main_character_count < role['totalCount']:
+                main_character_count = role['totalCount']
+                main_character = name
 
-    if isOutCsv:
+        print('主角是%s!!!' % main_character)
+
+    if is_out_csv:
         # 生成动态条形图csv
         dataframe = pd.DataFrame(pdcsv)
-        dataframe.to_csv(outputFile, index=False, sep=',')
+        dataframe.to_csv(output_file, index=False, sep=',')
 
 
 '''
 计算给定的数组中字符出现的总次数
 '''
-def countWithArr(content, filterWords):
+
+
+def count_with_arr(content, filter_words):
     count = 0
-    for words in filterWords:
+    for words in filter_words:
         count += content.count(words)
     return count
+
 
 '''
 数字转汉字
 '''
+
+
 def number2words(number, recursive_depth=0):
     str_number = str(number)
     if len(str_number) > 4:
@@ -109,5 +113,5 @@ def number2words(number, recursive_depth=0):
         return result
 
 
-def getChapter(chapterNumber):
-    return '第' + number2words(chapterNumber) + '回'
+def get_chapter(chapter_number):
+    return '第' + number2words(chapter_number) + '回'
