@@ -1,6 +1,6 @@
-'''
+"""
 分词并过滤后计算单词个数，根据个数正序得到最终结果
-'''
+"""
 
 import jieba
 import jieba_filter.water_margin
